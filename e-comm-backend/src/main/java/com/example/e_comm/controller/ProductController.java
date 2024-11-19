@@ -22,7 +22,7 @@ public class ProductController {
         return new ResponseEntity<>(pserv.getAllProducts(), HttpStatus.OK);
     }
 
-    @GetMapping("/products/{id}")
+    @GetMapping("/product/{id}")
     public ResponseEntity<Product> getProductById(@PathVariable int id){
         Product product=pserv.getProductById(id);
         if(product!=null){
