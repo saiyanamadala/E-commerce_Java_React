@@ -1,5 +1,6 @@
 package com.example.e_comm.model;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -22,6 +23,7 @@ public class Product {
     private BigDecimal price;
     private String category;
     @Column(name = "RELEASE_DATE")
+    @JsonFormat(shape = JsonFormat.Shape.STRING,pattern = "dd-MM-yyyy")
     private Date releaseDate;
     private boolean available;
     private int quantity;
