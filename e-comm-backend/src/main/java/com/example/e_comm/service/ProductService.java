@@ -19,6 +19,6 @@ public class ProductService {
     }
 
     public Product getProductById(int id){
-        return prepo.findById(id).get();
+        return prepo.findById(id).orElse(null);
     }
 }
