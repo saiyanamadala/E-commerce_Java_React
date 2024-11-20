@@ -23,8 +23,12 @@ public class Product {
     private BigDecimal price;
     private String category;
     @Column(name = "RELEASE_DATE")
-    @JsonFormat(shape = JsonFormat.Shape.STRING,pattern = "dd-MM-yyyy")
     private Date releaseDate;
     private boolean available;
     private int quantity;
+
+    private String imageName;
+    private String imageType;
+    @Lob
+    private byte[] imageData;
 }
