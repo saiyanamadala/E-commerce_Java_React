@@ -24,8 +24,10 @@ public class Product {
     private String category;
     @Column(name = "RELEASE_DATE")
     private Date releaseDate;
-    private boolean available;
-    private int quantity;
+    @Column(name="PRODUCT_AVAILABLE")
+    private boolean productAvailable;
+    @Column(name="STOCK_QUANTITY")
+    private int stockQuantity;
 
     private String imageName;
     private String imageType;

@@ -1,4 +1,4 @@
-INSERT INTO Product (name, description, brand, price, category, release_date, available, quantity)
+INSERT INTO Product (name, description, brand, price, category, release_date, product_Available, stock_Quantity)
 VALUES
 ('Smartphone X', 'Latest smartphone with advanced features', 'TechBrand', 799.99, 'Electronics', '2024-01-15', true, 50),
 ('Gaming Laptop Z', 'High-performance laptop for gaming and productivity', 'GamePro', 1499.49, 'Electronics', '2023-11-01', true, 30),
