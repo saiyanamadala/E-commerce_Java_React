@@ -3,6 +3,7 @@ package com.example.e_comm.service;
 import com.example.e_comm.model.Product;
 import com.example.e_comm.repo.ProductRepo;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.multipart.MultipartFile;
@@ -38,5 +39,9 @@ public class ProductService {
         product.setImageType(imageFile.getContentType());
 
         return prepo.save(product);
+    }
+
+    public void deleteProduct(int id) {
+        prepo.deleteById(id);
     }
 }
